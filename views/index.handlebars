@@ -4,19 +4,19 @@
 
 <ul>
   {{#each burger}}
-    {{#unless devoured}}
-      {{> burger/burger-block devoured=true}}
-    {{/unless}}
+  {{#unless this.Devoured}}
+      {{> burger/burger-block }} 
+      {{/unless}}
   {{/each}}
 </ul>
 
-<h2>burger that are devoured!</h2>
+<h2>Burger that are devoured!</h2>
 
 <ul>
   {{#each burger}}
-    {{#if devoured}}
-      {{> burger/burger-block devoured=false}}
-    {{/if}}
+  {{#if Devoured}}
+  {{> burger/burger-block }} 
+      {{/if}}
   {{/each}}
 </ul>
 
